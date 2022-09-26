@@ -1,0 +1,253 @@
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Abel');
+
+body, html {
+  color: #fff;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://c1.wallpaperflare.com/preview/870/782/371/hospital-a-e-emergency-hospital-beds.jpg) center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+.text-box {
+  background-color: rgba(230, 126, 34,0.8);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 90%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.container {
+  background-color: rgba(22, 160, 133,0.7);
+  border-radius: 20px;
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  
+}
+
+#survey-form {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.input-tab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.input-field {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  margin: 18px 0 0 10px;
+  border: 1px solid #e67e22;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+  font-weight: 300;
+}
+
+input {
+  margin: 7px;
+}
+
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid #e67e22;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  background-color: #e67e22;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: #bf6516;
+}
+
+footer {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px;
+}
+
+footer a {
+  color: #f39c12;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #f1c40f;
+}
+
+footer p {
+  margin: 0;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://c1.wallpaperflare.com/preview/870/782/371/hospital-a-e-emergency-hospital-beds.jpg) center no-repeat fixed;
+  background-size: cover;
+}
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .input-tab {
+    width: 100%;
+    float: left;
+    margin-left: -10px;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+}
+    </style>
+</head>
+<header >
+    
+    <div class="text-box">
+      <h1 id="title">DIABETES PREDICTION</h1><hr>
+        <p id="description">Enter your Details to predict if you have diabetes</p>
+    </div>
+  </header>
+
+      <div class="container">
+        <form id="survey-form" method="post">
+  
+           <div class="labels">
+            <label id="name-label" for="name">* Full Name</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required autofocus></div>         
+          
+           <div class="labels">
+            <label id="number-label" for="number">* Pregnancies</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" id="text1" name="text1" required></div>
+          
+          <div class="labels">
+            <label id="number-label" for="number">* Glucose Level</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" id="text2" name="text2" required></div>
+          
+          <div class="labels">
+            <label id="number-label" for="number">* BP</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" id="text" name="text" required></div>
+            
+          <div class="labels">
+            <label id="number-label" for="number">* Skin Thickness</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" id="text3" name="text3" required></div>
+          
+          <div class="labels">
+            <label id="number-label" for="number">* Insulin</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" id="text4" name="text4" required></div>
+          
+          <div class="labels">
+            <label id="number-label" for="number">* BMI</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" step="any" id="text5" name="text5"  required></div>
+          
+          <div class="labels">
+            <label id="number-label" for="number">* DPF</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number" step="any" id="text6" name="text6"  required></div>
+          
+           <div class="labels">
+            <label id="number-label" for="number">* Age</label></div>
+          <div class="input-tab">
+            <input class="input-field" type="number"  id="text7" name="text7"  required></div>       
+           <div class="btn">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+  <footer>
+  </footer>
+  
